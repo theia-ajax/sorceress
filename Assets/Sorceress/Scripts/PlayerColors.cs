@@ -4,6 +4,7 @@ public enum PlayerColorSlot
 {
     Primary,
     Secondary,
+    Emissive,
 }
 
 public interface IPlayerColors
@@ -21,6 +22,7 @@ public class PlayerColors : MonoBehaviour, IPlayerColors
     {
         public Color PrimaryColor;
         public Color SecondaryColor;
+        public Color EmissiveColor;
         public Color GetColor(PlayerColorSlot slot)
         {
             switch (slot)
@@ -28,6 +30,7 @@ public class PlayerColors : MonoBehaviour, IPlayerColors
                 default:
                 case PlayerColorSlot.Primary: return PrimaryColor;
                 case PlayerColorSlot.Secondary: return SecondaryColor;
+                case PlayerColorSlot.Emissive: return EmissiveColor;
             }
         }
     }
@@ -52,6 +55,7 @@ public class PlayerColors : MonoBehaviour, IPlayerColors
             default:
             case PlayerColorSlot.Primary: return Color.white;
             case PlayerColorSlot.Secondary: return Color.gray;
+            case PlayerColorSlot.Emissive: return Color.white;
         }
     }
 }

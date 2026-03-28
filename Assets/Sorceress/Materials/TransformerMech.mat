@@ -25,7 +25,6 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _EMISSION
   - _METALLICSPECGLOSSMAP
   - _NORMALMAP
   - _USE_EMISSION_COLOR_MASKING
@@ -125,9 +124,11 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _DstBlendAlpha: 0
-    - _EMISSION: 1
+    - _EMISSION: 0
     - _EmissionLM: 0
-    - _Emission_Base_Multiplier: 100
+    - _Emission_Base_Multiplier: 92.27
+    - _Emission_Blend_Base: 0
+    - _Emission_Color_Mask_Threshold: 0.5
     - _Enable_Color_Masking: 1
     - _EnvironmentReflections: 1
     - _GlossMapScale: 1
@@ -159,7 +160,7 @@ Material:
     - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
-    - _BaseColor: {r: 0, g: 0, b: 0, a: 1}
+    - _BaseColor: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorID_0: {r: 0, g: 1, b: 0.000000059604645, a: 1}
     - _ColorID_1: {r: 0, g: 0, b: 1, a: 1}
@@ -175,7 +176,7 @@ Material:
     - _Color_Swap_1: {r: 0.7137255, g: 0.6627451, b: 0.9411765, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor_1: {r: 0, g: 1, b: 1, a: 1}
-    - _EmissionColor_2: {r: 0.47058824, g: 0.36862746, b: 0.9411765, a: 1}
+    - _EmissionColor_2: {r: 1, g: 0.38488668, b: 0, a: 1}
     - _SpecColor: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

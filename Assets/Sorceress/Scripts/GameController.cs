@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public ApplyPlayerColorsToMaterials m_MaterialTest;
+    public MechMaterialController m_MaterialTest;
     public PlayerIndex m_PlayerIndex = PlayerIndex.Player1;
     private PlayerIndex m_LastPlayerIndex = PlayerIndex.Invalid;
 
