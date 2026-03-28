@@ -28,6 +28,7 @@ Material:
   - _EMISSION
   - _METALLICSPECGLOSSMAP
   - _NORMALMAP
+  - _USE_EMISSION_COLOR_MASKING
   m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
@@ -126,6 +127,7 @@ Material:
     - _DstBlendAlpha: 0
     - _EMISSION: 1
     - _EmissionLM: 0
+    - _Emission_Base_Multiplier: 100
     - _Enable_Color_Masking: 1
     - _EnvironmentReflections: 1
     - _GlossMapScale: 1
@@ -149,6 +151,7 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
+    - _USE_EMISSION_COLOR_MASKING: 1
     - _UVSec: 0
     - _WorkflowMode: 1
     - _XRMotionVectorsPass: 1
@@ -156,7 +159,7 @@ Material:
     - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
-    - _BaseColor: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 1}
+    - _BaseColor: {r: 0, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorID_0: {r: 0, g: 1, b: 0.000000059604645, a: 1}
     - _ColorID_1: {r: 0, g: 0, b: 1, a: 1}
@@ -171,6 +174,8 @@ Material:
     - _Color_Swap_0: {r: 0.47058824, g: 0.36862746, b: 0.9411765, a: 1}
     - _Color_Swap_1: {r: 0.7137255, g: 0.6627451, b: 0.9411765, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor_1: {r: 0, g: 1, b: 1, a: 1}
+    - _EmissionColor_2: {r: 0.47058824, g: 0.36862746, b: 0.9411765, a: 1}
     - _SpecColor: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

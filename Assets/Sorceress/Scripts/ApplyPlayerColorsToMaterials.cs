@@ -7,7 +7,11 @@ public class ApplyPlayerColorsToMaterials : MonoBehaviour
 
     void Awake()
     {
-        foreach (var renderer in GetComponentsInChildren<Renderer>())
+        foreach (var renderer in GetComponentsInChildren<SkinnedMeshRenderer>())
+        {
+            m_Materials.AddRange(renderer.materials);
+        }
+        foreach (var renderer in GetComponentsInChildren<MeshRenderer>())
         {
             m_Materials.AddRange(renderer.materials);
         }
@@ -15,10 +19,22 @@ public class ApplyPlayerColorsToMaterials : MonoBehaviour
 
     public void ApplyPlayerColors(IPlayerColors playerColors, PlayerIndex playerIndex)
     {
-        foreach (var material in m_Materials)
+        if (PlayerIndexUtil.IsValid(playerIndex))
         {
-            material.SetColor("_Color_Swap_0", playerColors.GetPlayerColor(playerIndex, PlayerColorSlot.Primary));
-            material.SetColor("_Color_Swap_1", playerColors.GetPlayerColor(playerIndex, PlayerColorSlot.Secondary));
+            foreach (var material in m_Materials)
+            {
+                material.SetInt("_Enable_Color_Masking", 1);
+                material.SetColor("_Color_Swap_0", playerColors.GetPlayerColor(playerIndex, PlayerColorSlot.Primary));
+                material.SetColor("_Color_Swap_1", playerColors.GetPlayerColor(playerIndex, PlayerColorSlot.Secondary));
+                material.SetColor("_EmissionColor_2", playerColors.GetPlayerColor(playerIndex, PlayerColorSlot.Primary));
+            }
+        }
+        else
+        {
+            foreach (var material in m_Materials)
+            {
+                material.SetInt("_Enable_Color_Masking", 0);
+            }
         }
     }
 }
