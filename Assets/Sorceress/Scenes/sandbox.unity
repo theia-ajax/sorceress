@@ -414,18 +414,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerColors
   m_PlayerColorEntries:
-  - PrimaryColor: {r: 0.47058824, g: 0.36862746, b: 0.9411765, a: 1}
-    SecondaryColor: {r: 0.7121998, g: 0.66258824, b: 0.9411765, a: 1}
-    EmissiveColor: {r: 0.94509804, g: 0.23137255, b: 0, a: 1}
-  - PrimaryColor: {r: 0.8627451, g: 0.14901961, b: 0.49803922, a: 1}
-    SecondaryColor: {r: 0.8627451, g: 0.5090196, b: 0.6819953, a: 1}
-    EmissiveColor: {r: 0.23529412, g: 1, b: 0, a: 1}
-  - PrimaryColor: {r: 0.99607843, g: 0.38039216, b: 0, a: 1}
-    SecondaryColor: {r: 0.99607843, g: 0.6882353, b: 0.49803922, a: 1}
-    EmissiveColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  - PrimaryColor: {r: 1, g: 0.6901961, b: 0, a: 1}
-    SecondaryColor: {r: 1, g: 0.845098, b: 0.5, a: 1}
-    EmissiveColor: {r: 0.22745098, g: 0, b: 0.9529412, a: 1}
+  - Primary: {r: 0.470588, g: 0.3686274, b: 0.941176, a: 1}
+    Secondary: {r: 0.7121998, g: 0.662588, b: 0.941176, a: 1}
+    EmissivePrimary: {r: 11.984311, g: 2.9339182, b: 0, a: 1}
+    EmissiveSecondary: {r: 0.47058824, g: 0.36862746, b: 0.9411765, a: 1}
+  - Primary: {r: 0.862745, g: 0.1490196, b: 0.498039, a: 1}
+    Secondary: {r: 0.8627451, g: 0.5090196, b: 0.6819953, a: 1}
+    EmissivePrimary: {r: 2.8198373, g: 11.984315, b: 0, a: 1}
+    EmissiveSecondary: {r: 0.21568628, g: 0.037254903, b: 0.124509804, a: 1}
+  - Primary: {r: 0.99607843, g: 0.38039216, b: 0, a: 1}
+    Secondary: {r: 0.99607843, g: 0.6882353, b: 0.49803922, a: 1}
+    EmissivePrimary: {r: 0, g: 7.5665607, b: 11.984315, a: 1}
+    EmissiveSecondary: {r: 0.24901961, g: 0.09509804, b: 0, a: 1}
+  - Primary: {r: 1, g: 0.6901961, b: 0, a: 1}
+    Secondary: {r: 1, g: 0.845098, b: 0.5, a: 1}
+    EmissivePrimary: {r: 29.398527, g: 0, b: 2.5794723, a: 1}
+    EmissiveSecondary: {r: 0.25, g: 0.17254902, b: 0, a: 1}
 --- !u!4 &806883909
 Transform:
   m_ObjectHideFlags: 0
@@ -454,7 +458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   m_MaterialTest: {fileID: 1753440701}
-  m_PlayerIndex: 1
+  m_PlayerIndex: 4
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,6 +585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0cfc38355ccb7498714b2662a6e42c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ApplyPlayerColorsToMaterials
+  m_EmissiveStrength: 1
+  m_ColorMask: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

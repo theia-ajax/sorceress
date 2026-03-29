@@ -126,9 +126,10 @@ Material:
     - _DstBlendAlpha: 0
     - _EMISSION: 0
     - _EmissionLM: 0
-    - _Emission_Base_Multiplier: 92.27
+    - _Emission_Base_Multiplier: 1
     - _Emission_Blend_Base: 0
     - _Emission_Color_Mask_Threshold: 0.5
+    - _Emission_Mask_Threshold: 0.5
     - _Enable_Color_Masking: 1
     - _EnvironmentReflections: 1
     - _GlossMapScale: 1
@@ -176,7 +177,9 @@ Material:
     - _Color_Swap_1: {r: 0.7137255, g: 0.6627451, b: 0.9411765, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor_1: {r: 0, g: 1, b: 1, a: 1}
-    - _EmissionColor_2: {r: 1, g: 0.38488668, b: 0, a: 1}
+    - _EmissionColor_2: {r: 0.74901956, g: 0.18336993, b: 0, a: 1}
+    - _EmissionColor_3: {r: 0.3137255, g: 0.3137255, b: 0.3137255, a: 1}
+    - _EmissionColor_4: {r: 0.7490196, g: 0.00045895812, b: 0, a: 1}
     - _SpecColor: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
