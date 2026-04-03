@@ -388,6 +388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6403267368348091377}
   - component: {fileID: 4580240056865602071}
+  - component: {fileID: 5073026961192178886}
   m_Layer: 0
   m_Name: TransformerMech
   m_TagString: Untagged
@@ -403,7 +404,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2970509850688591941}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -422,7 +423,7 @@ Animator:
   m_GameObject: {fileID: 2970509850688591941}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 60977fd02627e9746a6773f6de2eceb9, type: 3}
-  m_Controller: {fileID: 9100000, guid: c9e0be0e79e840a4a817cf857cfb466b, type: 2}
+  m_Controller: {fileID: 9100000, guid: ee3faacd34e8ff6458e67e406a356c38, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -434,6 +435,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5073026961192178886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2970509850688591941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0cfc38355ccb7498714b2662a6e42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ApplyPlayerColorsToMaterials
+  m_EmissiveStrength: 5
+  m_ColorMask: {r: 0, g: 1, b: 1, a: 1}
 --- !u!1 &3132560227966536330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,6 +1579,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: e995d756b9163ac45bc8cdcb7a13be6e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 519b0c6f639955c45a8989691bcfe9af, type: 2}
     - target: {fileID: 13700000, guid: e995d756b9163ac45bc8cdcb7a13be6e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -1736,6 +1755,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: fa45ea4466eed704a89ec3a6736c7195, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 225ea0fa0b854d2489535e46afe39242, type: 2}
     - target: {fileID: 13700000, guid: fa45ea4466eed704a89ec3a6736c7195, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -1814,6 +1837,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: fa45ea4466eed704a89ec3a6736c7195, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 225ea0fa0b854d2489535e46afe39242, type: 2}
     - target: {fileID: 13700000, guid: fa45ea4466eed704a89ec3a6736c7195, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 

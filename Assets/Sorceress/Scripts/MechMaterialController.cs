@@ -6,22 +6,24 @@ public class MechMaterialController : MonoBehaviour
 {
     private Material m_Material;
     [SerializeField] private float m_EmissiveStrength = 100.0f;
-    [SerializeField] private Color m_ColorMask = Color.cyan;
+    [SerializeField] private Color m_ColorMask1 = Color.cyan;
+    [SerializeField] private Color m_ColorMask2 = Color.black;
 
     private static readonly string k_EnableColorMaskingProp = "_Enable_Color_Masking";
     private static readonly string k_PrimaryColorProp = "_Color_Swap_0";
     private static readonly string k_SecondaryColorProp = "_Color_Swap_1";
-    private static readonly string k_EmissiveColorMaskProp = "_EmissionColor_1";
+    private static readonly string k_PrimaryEmissiveColorMaskProp = "_EmissionColor_1";
     private static readonly string k_PrimaryEmissiveColorProp = "_EmissionColor_2";
+    private static readonly string k_SecondaryEmissiveColorMaskProp = "_EmissionColor_3";
     private static readonly string k_SecondaryEmissiveColorProp = "_EmissionColor_4";
     private static readonly string k_EmissionStrengthProp = "_Emission_Base_Multiplier";
 
     private float m_LastEmissiveStrength = 0;
-    private Color m_LastColorMask = Color.cyan;
+    private Color m_LastColorMask1 = Color.black;
+    private Color m_LastColorMask2 = Color.black;
 
     void Awake()
     {
-
         foreach (var renderer in GetComponentsInChildren<SkinnedMeshRenderer>())
         {
             if (m_Material == null)
@@ -46,7 +48,6 @@ public class MechMaterialController : MonoBehaviour
         }
 
         SetMaterialEmissiveStrength(m_EmissiveStrength);
-        // SetMaterialColorMask(m_ColorMask);
     }
 
     public void ApplyPlayerColors(IPlayerColors playerColors, PlayerIndex playerIndex)
@@ -65,9 +66,16 @@ public class MechMaterialController : MonoBehaviour
             SetMaterialEmissiveStrength(m_EmissiveStrength);
         }
 
-        if (m_ColorMask != m_LastColorMask)
+        if (m_ColorMask1 != m_LastColorMask1)
         {
-            SetMaterialColorMask(m_ColorMask);
+            m_Material.SetColor(k_PrimaryEmissiveColorMaskProp, m_ColorMask1);
+            m_LastColorMask1 = m_ColorMask1;
+        }
+
+        if (m_ColorMask2 != m_LastColorMask2)
+        {
+            m_Material.SetColor(k_SecondaryEmissiveColorMaskProp, m_ColorMask2);
+            m_LastColorMask2 = m_ColorMask2;
         }
     }
 
@@ -75,11 +83,5 @@ public class MechMaterialController : MonoBehaviour
     {
         m_Material.SetFloat(k_EmissionStrengthProp, strength);
         m_LastEmissiveStrength = m_EmissiveStrength;
-    }
-
-    private void SetMaterialColorMask(Color color)
-    {
-        m_Material.SetColor(k_EmissiveColorMaskProp, color);
-        m_LastColorMask = color;
     }
 }

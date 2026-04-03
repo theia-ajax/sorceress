@@ -116,7 +116,7 @@ Material:
     - _CastShadows: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _Color_ID_Threshold: 0.883
+    - _Color_ID_Threshold: 0.5
     - _Cull: 2
     - _Cutoff: 0.5
     - _DETAIL_MULX2: 0
@@ -126,7 +126,7 @@ Material:
     - _DstBlendAlpha: 0
     - _EMISSION: 0
     - _EmissionLM: 0
-    - _Emission_Base_Multiplier: 1
+    - _Emission_Base_Multiplier: 2.1
     - _Emission_Blend_Base: 0
     - _Emission_Color_Mask_Threshold: 0.5
     - _Emission_Mask_Threshold: 0.5
@@ -154,6 +154,7 @@ Material:
     - _SrcBlendAlpha: 1
     - _Surface: 0
     - _USE_EMISSION_COLOR_MASKING: 1
+    - _USE_EMISSION_COLOR_MASK_2: 0
     - _UVSec: 0
     - _WorkflowMode: 1
     - _XRMotionVectorsPass: 1
@@ -161,7 +162,7 @@ Material:
     - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
-    - _BaseColor: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
+    - _BaseColor: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorID_0: {r: 0, g: 1, b: 0.000000059604645, a: 1}
     - _ColorID_1: {r: 0, g: 0, b: 1, a: 1}
@@ -174,12 +175,15 @@ Material:
     - _Color_ID_0: {r: 0, g: 1, b: 0, a: 1}
     - _Color_ID_1: {r: 1, g: 1, b: 1, a: 1}
     - _Color_Swap_0: {r: 0.47058824, g: 0.36862746, b: 0.9411765, a: 1}
-    - _Color_Swap_1: {r: 0.7137255, g: 0.6627451, b: 0.9411765, a: 1}
+    - _Color_Swap_1: {r: 0.71065265, g: 0.6607059, b: 0.9411765, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor_1: {r: 0, g: 1, b: 1, a: 1}
-    - _EmissionColor_2: {r: 0.74901956, g: 0.18336993, b: 0, a: 1}
-    - _EmissionColor_3: {r: 0.3137255, g: 0.3137255, b: 0.3137255, a: 1}
-    - _EmissionColor_4: {r: 0.7490196, g: 0.00045895812, b: 0, a: 1}
+    - _EmissionColor_2: {r: 16, g: 8.658824, b: 0, a: 1}
+    - _EmissionColor_3: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
+    - _EmissionColor_4: {r: 0, g: 0, b: 0, a: 1}
+    - _Emission_Color_1: {r: 0, g: 0, b: 0, a: 1}
+    - _Emission_Color_2: {r: 1, g: 0.70980394, b: 0, a: 1}
+    - _Emission_Color_3: {r: 1, g: 0.7052167, b: 0, a: 1}
     - _SpecColor: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
